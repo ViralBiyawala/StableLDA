@@ -240,6 +240,28 @@ double MultiNode::logphi_update(int given_y){
 	return variants[given_y].logphi_update();
 }
 
+// This file defines the implementation of three classes: ROOT, Node, and MultiNode. 
+// These classes represent a hierarchical structure with nodes that can have children and edges with weights. 
+// The classes provide various methods to manipulate and query this structure. 
 
+// ROOT class:
+// - num_leaves(): Calculates the total number of leaves in the tree.
+// - leaf_count_update(double val, int leaf): Updates the edge weights and sums based on the given leaf.
+// - get_multinodes(): Retrieves all MultiNode children of the ROOT.
+// - wordval_update(double val, int leaf): Updates and returns a value based on the edge weights and the given leaf.
+// - logphi_update(): Computes and returns a log-probability value based on the edge weights and original edge weights.
 
+// Node class:
+// - num_leaves(): Calculates the total number of leaves in the subtree rooted at this node.
+// - leaf_count_update(double val, int leaf): Updates the edge weights and sums based on the given leaf.
+// - wordval_update(double val, int leaf): Updates and returns a value based on the edge weights and the given leaf.
+// - logphi_update(): Computes and returns a log-probability value based on the edge weights and original edge weights.
 
+// MultiNode class:
+// - logphi_update(): Computes and returns a log-probability value based on the edge weights and original edge weights.
+// - num_leaves(): Calculates the total number of leaves in the subtree rooted at this node, including words.
+// - leaf_count_update(double val, int leaf): Updates the edge weights and sums based on the given leaf, including variants.
+// - wordval_update(double val, int leaf): Updates and returns a value based on the edge weights and the given leaf, including variants.
+// - num_variants(): Returns the number of variants in the MultiNode.
+// - var_logweight(int given_y): Returns the log-weight of a given variant.
+// - logphi_update(int given_y): Computes and returns a log-probability value for a given variant.

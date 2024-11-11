@@ -76,3 +76,12 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+
+/*
+ * This file is the main entry point for training a topic model using the Estimator class.
+ * It parses command-line arguments to set various parameters such as the data file, vocabulary file,
+ * cluster file, number of topics, number of words, alpha, beta, eta, number of epochs, random seed, 
+ * and output path. After parsing the arguments, it initializes an Estimator object with these parameters.
+ * The Estimator object then loads the data, performs the estimation process for the specified number of epochs,
+ * and finally saves the results to the specified output path.
+ */

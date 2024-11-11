@@ -97,4 +97,17 @@ void save_sample(string filename, vector<vector<int>> samples) {
   file.close();
 }
 
-};
+}
+
+/*
+ * This file contains utility functions for various mathematical and data manipulation tasks.
+ * 
+ * Functions included:
+ * - log_mult_sample: Computes a sample from a log-transformed multinomial distribution.
+ * - mult_sample: Samples an index from a multinomial distribution given the probabilities and their sum.
+ * - getIndex: Finds the index of a given element in a vector of integers.
+ * - normalize: Normalizes a vector of doubles by dividing each element by a given sum.
+ * - sort_indexes: Returns the indices that would sort a vector of doubles in descending order.
+ * - save_matrix: Saves a 2D matrix of doubles to a file.
+ * - save_sample: Saves a 2D matrix of integers (samples) to a file.
+ */
