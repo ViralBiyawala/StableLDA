@@ -1,7 +1,3 @@
-Here's a reorganized version of the README for clarity and ease of use, with triple backticks (` ``` `) replaced by dollar signs (`````). 
-
----
-
 # Stable LDA: Extracting Actionable Insights from Text Data
 
 ### Introduction
