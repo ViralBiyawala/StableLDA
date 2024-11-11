@@ -8,15 +8,20 @@ default: train
 
 train: src\utils\c++\train.cpp $(OBJS)
 	$(CC) $(CFLAGS) $(LDFLAGS) -o src\train.exe $< $(OBJS)
+	# For Linux: $(CC) $(CFLAGS) $(LDFLAGS) -o src/train $< $(OBJS)
 
 src\utils\execution\estimator.o: src\utils\c++\estimator.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
+	# For Linux: $(CC) $(CFLAGS) -c -o $@ $<
 
 src\utils\execution\nodes.o: src\utils\c++\nodes.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
+	# For Linux: $(CC) $(CFLAGS) -c -o $@ $<
 
 src\utils\execution\utility.o: src\utils\c++\utility.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
+	# For Linux: $(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	del src\utils\execution\*.o src\train.exe
+	# For Linux: rm src/utils/execution/*.o src/train
