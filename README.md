@@ -89,4 +89,3 @@ Defines `Dataset` class for text preprocessing:
 3. **Gibbs Sampling** (`estimate`): Estimates topic distributions via MCMC sampling.
 4. **Distributions Calculation** (`calc_theta` and `calc_phi`): Produces document-topic (`theta`) and topic-word (`phi`) distributions.
 5. **Result Saving**: Saves estimated distributions.
-
